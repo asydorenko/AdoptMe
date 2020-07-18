@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a1.campr">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".workmodeActivity" />
+        <activity android:name=".resetActivity" />
+        <activity
+            android:name=".AdopterActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ViewPetsActivity"></activity>
+        <activity
+            android:name=".EditPet"
+            android:label="Edit profile" />
+        <activity
+            android:name=".ViewPetsFavorite"
+            android:label="View pet" />
+        <activity
+            android:name=".AddNewActivity"
+            android:label="List new pet"/>
+        <activity
+            android:name=".ApplicantsActivity"
+            android:label="View Applicants"
+            android:parentActivityName=".ListerActivity"/>
+        <activity
+            android:name=".ViewApplicantActivity"
+            android:label="View Applicant" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="Profile" />
+        <activity
+            android:name=".PreferencesActivity"
+            android:label="Preferences" />
+    </application>
+
+</manifest>
